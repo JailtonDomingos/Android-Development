@@ -1,5 +1,5 @@
 # Android-Development
 Desenvolvimento android
 
-Projeto criado para aconpanhar estudos na área de desenvolvimento mobile.
+Projeto criado para aconmpanhar estudos na área de desenvolvimento mobile.
 
