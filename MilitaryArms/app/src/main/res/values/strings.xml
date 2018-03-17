@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Military Arms</string>
+    <string name="senha_incorreta">Senha Incorreta</string>
+    <string name="usuario_logado">Usuario logado</string>
+    <string name="senha_invalida">Senha Invalida</string>
+    <string name="ok">OK</string>
+    <string name="voltar">VOLTAR</string>
 </resources>
