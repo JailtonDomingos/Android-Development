@@ -11,8 +11,8 @@
         android:layout_width="368dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="8dp"
-        tools:ignore="ExtraText,MissingConstraints">
+        tools:ignore="ExtraText,MissingConstraints"
+        tools:layout_editor_absoluteX="8dp">
 
         <Button
             android:id="@+id/buttonLogin"
@@ -25,7 +25,7 @@
             android:layout_marginLeft="74dp"
             android:layout_marginStart="74dp"
             android:onClick="buttonLogin"
-            android:text="Login"
+            android:text="@string/login"
             tools:ignore="OnClick" />;
 
         <Button
@@ -39,7 +39,7 @@
             android:layout_toEndOf="@+id/buttonLogin"
             android:layout_toRightOf="@+id/buttonLogin"
             android:onClick="buttonCancel"
-            android:text="Cancel"
+            android:text="@string/cancel"
             tools:ignore="OnClick" />
 
         <EditText
@@ -73,7 +73,7 @@
             android:layout_above="@+id/editTextLogin"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="15dp"
-            android:text="Login" />
+            android:text="@string/login" />
 
         <TextView
             android:id="@+id/textView2"
@@ -83,22 +83,7 @@
             android:layout_alignEnd="@+id/textView"
             android:layout_alignRight="@+id/textView"
             android:layout_marginBottom="16dp"
-            android:text="Senha" />
-
-        <EditText
-            android:id="@+id/editTextValida"
-            android:layout_width="120dp"
-            android:layout_height="25dp"
-            android:layout_alignLeft="@+id/buttonCancel"
-            android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/buttonCancel"
-            android:layout_marginLeft="18dp"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="47dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:visibility="invisible" />
+            android:text="@string/password" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

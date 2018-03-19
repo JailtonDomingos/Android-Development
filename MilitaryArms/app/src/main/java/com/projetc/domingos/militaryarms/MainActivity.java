@@ -6,12 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
-    //public static usuario = "JAILTON";
-    //public static senha = "123";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
         final Button buttonCancel   = findViewById(R.id.buttonCancel);
         final EditText formLogin    = findViewById(R.id.editTextLogin);
         final EditText formSenha    = findViewById(R.id.editTextSenha);
-        //final EditText formValida   = findViewById(R.id.editTextValida);
 
         final Intent intentLogin = new Intent(MainActivity.this, SecondActivity.class);
         final Intent intentErro;
