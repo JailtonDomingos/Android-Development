@@ -18,8 +18,6 @@ public class ThirdActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
 
-       // final Intent intentVolta = new Intent(ThirdActivity.this, MainActivity.class);
-
         Button buttonOk = findViewById(R.id.buttonOK);
 
         buttonOk.setOnClickListener(new View.OnClickListener() {
