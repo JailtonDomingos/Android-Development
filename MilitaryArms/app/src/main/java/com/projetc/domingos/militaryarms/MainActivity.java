@@ -10,11 +10,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    //final Button buttonLogin    = findViewById(R.id.buttonLogin);
-    //final Button buttonCancel   = findViewById(R.id.buttonCancel);
-    final EditText formLogin    = findViewById(R.id.editTextLogin);
-    final EditText formSenha    = findViewById(R.id.editTextSenha);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view){
         switch (view.getId()){
             case R.id.buttonLogin:
+                final EditText formLogin    = findViewById(R.id.editTextLogin);
+                final EditText formSenha    = findViewById(R.id.editTextSenha);
                 if (formLogin.getText().toString().equals("bacon") && formSenha.getText().toString().equals("123")) {
                     Intent intentLogin    = new Intent(this, SecondActivity.class);
                     startActivity(intentLogin);
