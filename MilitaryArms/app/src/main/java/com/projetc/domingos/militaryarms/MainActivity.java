@@ -4,16 +4,23 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        MainActivity.setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
+
+        Button buttonLogin = findViewById(R.id.buttonLogin);
+        buttonLogin.setOnClickListener(this);
+        Button buttonCancel = findViewById(R.id.buttonCancel);
+        buttonCancel.setOnClickListener(this);
+
     }
     public void onClick(View view){
         switch (view.getId()){
@@ -26,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
                 } else {
                     //String texto = R.string.wrong_password;
-                    Toast.makeText(this, R.string.invalid_password, Toast.LENGTH_LONG);
+                    Toast.makeText(this, R.string.invalid_password, Toast.LENGTH_LONG).show();
 
                 }
                 break;
