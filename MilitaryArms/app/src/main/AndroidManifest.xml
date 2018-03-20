@@ -21,11 +21,6 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-        <activity android:name=".ThirdActivity">
-            <intent-filter>
-                <category android:name="android.intent.category.ALTERNATIVE" />
-            </intent-filter>
-        </activity>
     </application>
 
 
