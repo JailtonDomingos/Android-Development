@@ -1,5 +1,6 @@
 package com.projetc.domingos.militaryarms;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -10,7 +11,7 @@ import android.widget.Button;
  */
 
 
-public class SecondActivity extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,16 +19,18 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         Button buttonVoltar = findViewById(R.id.buttonVoltar);
+        buttonVoltar.setOnClickListener(this);
 
-        buttonVoltar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
+    }
 
-            }
-        });
-
-
+    public void onClick(View view){
+        switch (view.getId()){
+            case R.id.buttonVoltar:
+                //Intent intentVoltar = new Intent(SecondActivity.this, MainActivity.class);
+                //startActivity(intentVoltar);
+                finish();
+                break;
+        }
     }
 
 }
