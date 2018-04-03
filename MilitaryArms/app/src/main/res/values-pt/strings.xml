@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Military Arms</string>
+    <string name="hello_world">Olá Mundo</string>
+
+    <string name="logged_user">Usuario logado</string>
+    <string name="invalid_password">Senha Invalida</string>
+    <string name="ok">OK</string>
+    <string name="back">VOLTAR</string>
+    <string name="login">Entrar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="password">Senha</string>
+
+    <string name="login_user">bacon</string>
+    <string name="login_password">123</string>
+
+</resources>
