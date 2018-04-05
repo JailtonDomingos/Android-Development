@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     public void onClick(View view){
         switch (view.getId()){
+            //Não criar Switch Case para os Buttons, usar a parte comentada na secondView
             case R.id.buttonLogin:
                 final EditText formLogin    = findViewById(R.id.editTextLogin);
                 final EditText formSenha    = findViewById(R.id.editTextSenha);
