@@ -18,6 +18,8 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        //Sempre fazer um novo Button para cada botão da tela
+        //ao invés de instanciar uma classe button generica e chamar os metodos onClick() apontando o nome String do button.
         Button buttonVoltar = findViewById(R.id.buttonVoltar);
         buttonVoltar.setOnClickListener(this);
 
@@ -26,6 +28,9 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view){
         switch (view.getId()){
             case R.id.buttonVoltar:
+                
+                //Comentario: Este é um método para fazer o app retornar a última view chamado,
+                //porem o metodo finish() acredito ser mais perfomatico e garantido.
                 //Intent intentVoltar = new Intent(SecondActivity.this, MainActivity.class);
                 //startActivity(intentVoltar);
                 finish();
